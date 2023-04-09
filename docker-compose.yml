@@ -1,0 +1,15 @@
+---
+version: "3"
+services:
+  java:
+    image: mayurhub/phonepay:v1
+    ports:
+      - 8000:80
+    deploy:
+      replicas: 2
+  devops:
+    image: mayurhub/googlepay:v1
+    ports:
+      - 8001:80
+    deploy:
+      replicas: 2
